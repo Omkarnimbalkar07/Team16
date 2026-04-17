@@ -3,8 +3,7 @@ function login() {
     let pass = document.getElementById("password").value;
 
     if (user === "admin" && pass === "1234") {
-        document.getElementById("message").style.color = "green";
-        document.getElementById("message").innerText = "Login Successful!";
+        window.location.href = "index.html";
     } else {
         document.getElementById("message").innerText = "Invalid Username or Password";
     }
